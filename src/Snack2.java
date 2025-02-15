@@ -15,9 +15,10 @@ public class Snack2 {
             if(importoConvertito == 0.0F){
                 System.out.println("Dati inseriti non validi");
             }else{
-                System.out.println("Da "+valutaDa+" a "+valutaA+" = €"+importoConvertito);
+                System.out.println("Da "+valutaDa+" a "+valutaA+" = "+importoConvertito);
             }
             System.out.println("Converti da:");
         }
+        scan.close();
     }
 }

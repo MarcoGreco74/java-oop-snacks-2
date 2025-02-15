@@ -12,7 +12,7 @@ public class ConvertitoreValute {
     
     final static String[] tassoScambio = {"da EUR a USD", "da EUR a GBP", "da EUR a JPY", "da EUR a ALL", "da EUR a CAD", "da EUR a USD"};
 
-    public float importoInput;
+    private float importoInput;
 
     public ConvertitoreValute(){
         
@@ -22,9 +22,10 @@ public class ConvertitoreValute {
         float importoOutput = 0.0F;
         boolean isTasso = false;
         for(String s : tassoScambio){
-            if(("da "+da+" a "+a).equals(s)){
+            /*if(("da "+da+" a "+a).equals(s)){
                 isTasso = true;
-            }
+            }*/
+            isTasso = (("da "+da+" a "+a).equals(s)) ? true : false;
         }
             if(isTasso == true){
                 if(da.equals("EUR") && a.equals("USD")){
@@ -42,6 +43,14 @@ public class ConvertitoreValute {
             importoOutput = 0.0F;
         }
         return importoOutput;
+    }
+
+    public float getImportoInput() {
+        return importoInput;
+    }
+
+    public void setImportoInput(float importoInput) {
+        this.importoInput = importoInput;
     }
 
 }
