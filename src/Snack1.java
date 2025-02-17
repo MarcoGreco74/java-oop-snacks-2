@@ -22,10 +22,10 @@ public class Snack1 {
         Auto auto2 = new Auto();
         Auto auto3 = new Auto();
         Auto auto4 = new Auto();
-        System.out.println("Modello auto: "+auto1.modello+" - Numero telaio: "+auto1.getNumeroTelaio());
-        System.out.println("Modello auto: "+auto2.modello+" - Numero telaio: "+auto2.getNumeroTelaio());
-        System.out.println("Modello auto: "+auto3.modello+" - Numero telaio: "+auto3.getNumeroTelaio());
-        System.out.println("Modello auto: "+auto4.modello+" - Numero telaio: "+auto4.getNumeroTelaio());
+        System.out.println("Modello auto: "+auto1.modello+" - Numero telaio: "+auto1.numTelaio);
+        System.out.println("Modello auto: "+auto2.modello+" - Numero telaio: "+auto2.numTelaio);
+        System.out.println("Modello auto: "+auto3.modello+" - Numero telaio: "+auto3.numTelaio);
+        System.out.println("Modello auto: "+auto4.modello+" - Numero telaio: "+auto4.numTelaio);
         System.out.println("Totale auto create: "+Auto.getNumeroTotaleAuto());
     }
 }

@@ -10,7 +10,7 @@ Il programma deve accettare input dall’utente (valuta di partenza, valuta di d
 
 public class ConvertitoreValute {
     
-    final static String[] tassoScambio = {"da EUR a USD", "da EUR a GBP", "da EUR a JPY", "da EUR a ALL", "da EUR a CAD", "da EUR a USD"};
+    static final String[] tassoScambio = {"da EUR a USD", "da EUR a GBP", "da EUR a JPY", "da EUR a ALL", "da EUR a CAD", "da EUR a USD"};
 
     private float importoInput;
 

@@ -28,14 +28,6 @@ public class Auto {
             return contatoreAuto;
     }
 
-    public int getNumeroTelaio(){
-        return numTelaio;
-    }
-
-    public static int getContatoreAuto() {
-        return contatoreAuto;
-    }
-
     public String getModello() {
         return modello;
     }
